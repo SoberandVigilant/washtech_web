@@ -1,3 +1,4 @@
+
 :root {
     --orange: #faaf40;
     --blue: #0070bb;
@@ -5,12 +6,19 @@
 }
 
 * {
-    font-family: 'open sans', sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
     outline: none;
+    max-width: 100%;
+
 }
+body{
+    font-family: 'open sans', sans-serif;
+    line-height: 1.6;
+   background-color: rgba(216, 219, 215, 0.84);
+}
+
 
 header {
     display: flex;
@@ -24,6 +32,7 @@ header {
     left: 0;
     right: 0;
     height: 80px;
+ 
 }
 
 header img {
@@ -34,7 +43,9 @@ header img {
 header * {
     display: inline;
     justify-content: space-between;
+    
 }
+
 
 header .navbar a {
     font-size: 1.7rem;
@@ -49,7 +60,7 @@ header .navbar a:hover {
 
 #menu {
     font-size: 2.5rem;
-    border-radius: .5rem;
+    border-radius: 3rem;
     background: #eee;
     color: var(--blue);
     padding: 1rem 1.5rem;
@@ -59,11 +70,14 @@ header .navbar a:hover {
 
 .home {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     grid-gap: 3rem;
     align-items: center;
     justify-content: center;
     margin-left: 4%;
+margin-bottom: 0;
+    margin-top: 10% ;
+   
    
 }
 
@@ -90,3 +104,81 @@ header .navbar a:hover {
 
 }
 
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--blue);
+    color: #fff;
+    margin-top: 25px;
+}
+
+.about h1{
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+
+
+.ins
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.app{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--orange);
+    color: #fff;
+    margin-top: 25px;
+    flex-direction: column-reverse;
+    
+}
+
+.install {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--blue);
+    color: #fff;
+    margin-top: 25px;
+    flex-direction: column-reverse;
+}
+
+.install img{
+    float: right;
+}
+
+.store img {
+    float:left;
+    size-adjust: 100px;
+}
+.app .h1{
+    color: #0070bb;
+    font-size: 3rem;
+}
+
+.app p{
+
+}
+.support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
